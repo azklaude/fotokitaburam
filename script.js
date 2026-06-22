@@ -96,7 +96,10 @@ async function startLetter(){
     await delay(500);
   }
 
+  await delay(5000);
+
   nextBtn.classList.remove("hidden");
+  nextBtn.classList.add("show-next");
 }
 
 function typeText(element,text){
