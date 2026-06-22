@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Little Message For You 🤍</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="background">
+    <div class="gradient-bg"></div>
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <div id="particles"></div>
+  </div>
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/song.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Music Button -->
+  <button id="musicBtn" class="music-btn hidden">
+    🎵
+  </button>
+
+  <!-- OPEN SCREEN -->
+  <section id="welcomeSection" class="section active">
+
+    <div class="glass-card welcome-card">
+
+      <div class="letter-icon">
+        💌
+      </div>
+
+      <h1>
+        A little message for you 🤍
+      </h1>
+
+      <button id="openBtn" class="primary-btn">
+        Buka
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- LETTER SCREEN -->
+  <section id="letterSection" class="section">
+
+    <div class="glass-card letter-card">
+
+      <h2>
+        For You ✨
+      </h2>
+
+      <div id="letterContent">
+
+        <p class="line" data-text="Halo my blueberry🤭"></p>
+
+      </div>
+
+      <button id="nextBtn" class="primary-btn hidden">
+        Lanjut 🤍
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- PHOTO SCREEN -->
+  <section id="photoSection" class="section">
+
+    <div class="photo-wrapper">
+
+      <div class="photo-frame">
+
+        <img
+          src="assets/images/photo.jpg"
+          alt="Our Photo"
+        >
+
+      </div>
+
+      <h2>
+        Cepat sembuh ya sayang, love you 🤍
+      </h2>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
